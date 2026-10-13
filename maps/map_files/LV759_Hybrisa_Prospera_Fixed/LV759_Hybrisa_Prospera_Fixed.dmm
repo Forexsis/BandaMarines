@@ -1054,9 +1054,6 @@
 /turf/open/floor/hybrisa/tile/tilegrey,
 /area/lv759/indoors/wy_research_complex/hallwaysoutheast)
 "acZ" = (
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
 /turf/open/floor/plating/platingdmg1,
 /area/lv759/indoors/mining_outpost/north_maint)
 "ada" = (
@@ -1243,7 +1240,7 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/indoors/caves/east_caves)
 "adE" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "92"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -3353,10 +3350,10 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/indoors/caves/north_west_caves)
 "ajp" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "zwing7";
-	opacity = 0
+/obj/structure/shuttle/part/dropship_wy/transparent/lower_right_wing{
+	icon_state = "zwing7"
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "ajq" = (
 /obj/structure/prop/hybrisa/cavedecor/stalagmite3{
@@ -7465,7 +7462,6 @@
 /obj/effect/decal/hybrisa/dirt,
 /obj/item/trash/hotdog,
 /obj/effect/decal/hybrisa/trash,
-/mob/living/simple_animal/mouse/rat/brown,
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/north_east_street)
 "atR" = (
@@ -8675,9 +8671,6 @@
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "aBI" = (
 /obj/structure/machinery/portable_atmospherics/powered/scrubber/huge/stationary,
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
 /turf/open/floor/plating,
 /area/lv759/indoors/mining_outpost/south)
 "aBM" = (
@@ -8913,7 +8906,9 @@
 /turf/open/floor/kutjevo/grey,
 /area/lv759/indoors/mining_outpost/northeast)
 "aEd" = (
-/obj/structure/closet/secure_closet/engineering_personal,
+/obj/structure/closet/secure_closet/engineering_personal{
+	req_one_access = list(9914)
+	},
 /obj/structure/noticeboard{
 	pixel_y = 32
 	},
@@ -9032,7 +9027,7 @@
 /turf/open/hybrisa/street/sidewalk/north,
 /area/lv759/outdoors/colony_streets/east_central_street)
 "aFo" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
 /turf/open/hybrisa/street/sidewalk/northwest,
@@ -9781,10 +9776,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/lv759/indoors/hospital/morgue)
-"aLb" = (
-/mob/living/simple_animal/mouse/rat/white,
-/turf/open/floor/plating/platingdmg3/west,
-/area/lv759/indoors/hobosecret)
 "aLi" = (
 /obj/structure/machinery/light,
 /turf/open/floor/kutjevo/fake_wood,
@@ -10071,7 +10062,7 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/pizzaria)
 "aNL" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 8
 	},
 /obj/effect/decal/medical_decals{
@@ -10265,7 +10256,6 @@
 	pixel_y = 12
 	},
 /obj/item/poster,
-/mob/living/simple_animal/mouse/rat/brown/Old_Timmy,
 /obj/item/reagent_container/syringe{
 	icon_state = "broken"
 	},
@@ -10839,10 +10829,10 @@
 /turf/open/floor/almayer/plate,
 /area/lv759/indoors/weyyu_office/pressroom)
 "aTJ" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
-/obj/structure/machinery/landinglight/ds2/spoke{
+/obj/structure/machinery/landinglight/spoke{
 	pixel_x = 6
 	},
 /turf/open/hybrisa/street/sidewalk/north,
@@ -11424,12 +11414,6 @@
 	},
 /turf/open/floor/kutjevo/grey,
 /area/lv759/indoors/recycling_plant/garage)
-"aYO" = (
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/lv759/indoors/caves/north_caves)
 "aYP" = (
 /obj/effect/decal/hybrisa/road/road_edge{
 	icon_state = "road_edge_decal2"
@@ -11527,9 +11511,6 @@
 /turf/open/floor/prison/floor_marked,
 /area/lv759/indoors/spaceport/starglider)
 "baa" = (
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
 /obj/structure/machinery/power/apc/power/east{
 	req_one_access = null
 	},
@@ -12643,7 +12624,6 @@
 /obj/effect/decal/hybrisa/trash{
 	icon_state = "trash_11"
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/central_streets)
 "biR" = (
@@ -12672,7 +12652,7 @@
 /turf/open/floor/strata/multi_tiles,
 /area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "bjm" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "25"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -12799,9 +12779,8 @@
 /turf/open/floor/corsat/officetiles,
 /area/lv759/indoors/wy_research_complex/xenoarcheology)
 "bka" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "27";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "27"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "bkd" = (
@@ -14244,7 +14223,6 @@
 /obj/effect/decal/hybrisa/trash{
 	icon_state = "trash_5"
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/item/shard,
 /obj/effect/decal/hybrisa/trash{
 	icon_state = "trash_11"
@@ -15301,7 +15279,9 @@
 /turf/open/hybrisa/street/sidewalk/northwest,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "bEz" = (
-/obj/structure/prop/hybrisa/airport/dropshipwingright,
+/obj/structure/shuttle/part/dropship_wy/transparent/upper_right_wing{
+	icon_state = "zwing5"
+	},
 /turf/open/floor/hybrisa/metal/yellow_warning_floor,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "bEC" = (
@@ -16094,7 +16074,6 @@
 "bKW" = (
 /obj/effect/decal/hybrisa/dirt,
 /obj/structure/barricade/handrail/hybrisa/handrail,
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/item/trash/hybrisa/cuppa_joes/lid,
 /turf/open/floor/hybrisa/metal/grated/east,
 /area/lv759/outdoors/colony_streets/north_east_street)
@@ -16420,10 +16399,10 @@
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/east_central_street)
 "bNS" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
-/obj/structure/machinery/landinglight/ds2/spoke{
+/obj/structure/machinery/landinglight/spoke{
 	pixel_x = -12
 	},
 /turf/open/hybrisa/street/sidewalk/east,
@@ -20179,12 +20158,12 @@
 /turf/open/floor/hybrisa/metal/zbrownfloor1/northeast,
 /area/lv759/indoors/meridian/meridian_showroom)
 "cqH" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/obj/structure/shuttle/part/dropship_wy/transparent/lower_left_wing{
 	icon_state = "zwing3";
-	opacity = 0;
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/horizon_runner)
 "cqL" = (
 /obj/effect/decal/hybrisa/road/road_edge{
@@ -20561,7 +20540,6 @@
 /area/lv759/outdoors/landing_zone_2)
 "ctQ" = (
 /obj/structure/machinery/fuelcell_recycler,
-/obj/structure/machinery/power/terminal,
 /obj/item/fuel_cell/used,
 /turf/open/floor/almayer/plating/northeast,
 /area/lv759/indoors/power_plant/equipment_east)
@@ -20603,7 +20581,8 @@
 /turf/open/floor/hybrisa/metal/zbrownfloor1/west,
 /area/lv759/indoors/meridian/meridian_factory)
 "cuc" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider,
+/obj/structure/shuttle/part/dropship_wy/transparent/left_outer_bottom_wing,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "cuj" = (
 /obj/item/trash/hybrisa/cuppa_joes/lid,
@@ -20902,9 +20881,8 @@
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "cwi" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "6"
-	},
+/obj/structure/shuttle/part/dropship_wy/transparent/right_outer_bottom_wing,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "cwj" = (
 /obj/structure/barricade/handrail{
@@ -21254,7 +21232,6 @@
 /area/lv759/indoors/hospital/virology)
 "czV" = (
 /obj/structure/disposalpipe/segment,
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/effect/hybrisa/misc/fake/wire/red{
 	dir = 4
 	},
@@ -21475,12 +21452,6 @@
 /obj/item/trash/hybrisa/cuppa_joes/lid,
 /turf/open/hybrisa/street/cement1,
 /area/lv759/outdoors/colony_streets/central_streets)
-"cBc" = (
-/obj/structure/machinery/landinglight/ds2/spoke{
-	pixel_x = 12
-	},
-/turf/open/floor/plating/plating_catwalk/prison,
-/area/lv759/outdoors/landing_zone_1)
 "cBf" = (
 /obj/structure/machinery/light/small{
 	dir = 1;
@@ -22224,10 +22195,10 @@
 /turf/open/floor/almayer/test_floor5,
 /area/lv759/indoors/spaceport/horizon_runner)
 "cGH" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 8
 	},
-/obj/structure/machinery/landinglight/ds2/spoke{
+/obj/structure/machinery/landinglight/spoke{
 	pixel_x = 12
 	},
 /turf/open/hybrisa/street/sidewalk/west,
@@ -22304,9 +22275,17 @@
 /turf/open/floor/hybrisa/tile/darkgrey_bigtile,
 /area/lv759/indoors/wy_research_complex/dormsbedroom)
 "cHd" = (
-/obj/structure/machinery/power/terminal,
-/turf/open/floor/corsat,
-/area/lv759/indoors/electical_systems/substation2)
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 2
+	},
+/obj/effect/decal/medical_decals{
+	dir = 1;
+	icon_state = "triagedecaldir";
+	color = "#d3d3d3"
+	},
+/turf/open/floor/almayer/research/containment/floor2,
+/area/lv759/indoors/wy_research_complex/mainlabs)
 "cHe" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SW-out"
@@ -23053,8 +23032,6 @@
 	pixel_x = -13;
 	pixel_y = 10
 	},
-/mob/living/simple_animal/mouse/rat/gray,
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/effect/decal/strata_decals/grime/grime3{
 	dir = 8
 	},
@@ -24248,11 +24225,6 @@
 /obj/effect/decal/hybrisa/dirt,
 /turf/open/floor/prison/floor_plate/southwest,
 /area/lv759/outdoors/colony_streets/east_central_street)
-"cVo" = (
-/obj/effect/decal/hybrisa/dirt,
-/mob/living/simple_animal/mouse/rat/gray,
-/turf/open/floor/hybrisa/metal/grated/north,
-/area/lv759/outdoors/colony_streets/north_west_street)
 "cVq" = (
 /turf/open/floor/prison/red,
 /area/lv759/indoors/colonial_marshals/reception)
@@ -24467,12 +24439,10 @@
 /turf/open/floor/strata/orange_edge/west,
 /area/lv759/indoors/weymart)
 "cXj" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
-	icon_state = "consoleleft";
-	opacity = 0;
-	icon = 'icons/obj/structures/machinery/shuttle-parts.dmi';
-	name = "\improper WY-LWI StarGlider SG-200";
-	can_block_movement = 1
+/obj/structure/blocker/invisible_wall,
+/turf/closed/shuttle/dropship_wy/StarGlider{
+	icon_state = "damaged_console1";
+	opacity = 0
 	},
 /area/lv759/indoors/spaceport/starglider)
 "cXk" = (
@@ -25823,7 +25793,6 @@
 	pixel_y = 12
 	},
 /obj/effect/decal/hybrisa/trash,
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/structure/prop/hybrisa/fakeplatforms/platform5/deco,
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/central_streets)
@@ -26293,7 +26262,7 @@
 /turf/open/floor/almayer/orange2/southwest,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_cargo)
 "djS" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
 /obj/effect/decal/hybrisa/dirt,
@@ -26505,7 +26474,7 @@
 /turf/open/floor/hybrisa/metal/grated/east,
 /area/lv759/outdoors/colony_streets/east_central_street)
 "dlL" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "47"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -27703,7 +27672,6 @@
 	color = "#858680"
 	},
 /obj/effect/decal/hybrisa/dirt,
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/structure/platform/metal/hybrisa/metalplatform6/west,
 /turf/open/floor/corsat/officetiles,
 /area/lv759/outdoors/colony_streets/central_streets)
@@ -29445,7 +29413,7 @@
 /turf/open/floor/plating/plating_catwalk/aicore,
 /area/lv759/indoors/hotel/hotel_hallway)
 "dKy" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 8
 	},
 /obj/structure/machinery/floodlight/landing,
@@ -29741,11 +29709,8 @@
 /turf/open/floor/hybrisa/tile/tilebeigecheckered,
 /area/lv759/indoors/colonial_marshals/press_room)
 "dNo" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "110";
-	name = "\improper WY-LWI StarGlider SG-200"
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "110"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "dNw" = (
@@ -32060,7 +32025,7 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/north_street)
 "efT" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "83"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -32784,7 +32749,7 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer0,
 /area/lv759/indoors/caves/south_east_caves)
 "elL" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "67"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -33209,9 +33174,8 @@
 /turf/open/floor/mech_bay_recharge_floor,
 /area/lv759/indoors/wy_research_complex/hangarbay)
 "eoZ" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "4"
-	},
+/obj/structure/shuttle/part/dropship_wy/right_outer_wing_connector,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "epc" = (
 /obj/structure/bed/chair/comfy/beige{
@@ -33697,7 +33661,7 @@
 /turf/open/floor/prison/redcorner/north,
 /area/lv759/indoors/colonial_marshals/prisoners_foyer)
 "eti" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
 	icon_state = "rightengine_3"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -33733,14 +33697,6 @@
 /obj/effect/decal/hybrisa/dirt_2,
 /turf/open/floor/hybrisa/tile/tilewhite,
 /area/lv759/indoors/wy_research_complex/xenoarcheology)
-"etH" = (
-/obj/structure/machinery/landinglight/ds2/spoke{
-	pixel_x = 12;
-	pixel_y = -6
-	},
-/obj/effect/sentry_landmark/lz_1/top_right,
-/turf/open/floor/prison/darkredfull2,
-/area/lv759/outdoors/landing_zone_1)
 "etK" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/clothing/under/marine/veteran/pmc/corporate/hybrisa,
@@ -33961,7 +33917,7 @@
 /turf/open/floor/almayer/plating/northeast,
 /area/lv759/indoors/power_plant/equipment_east)
 "evk" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 8
 	},
 /obj/effect/decal/hybrisa/dirt,
@@ -34781,14 +34737,13 @@
 /turf/open/floor/hybrisa/metal/grated/north,
 /area/lv759/outdoors/colony_streets/central_streets)
 "eCO" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
 /obj/structure/machinery/floodlight/landing,
 /turf/open/floor/mech_bay_recharge_floor/shuttle_landing_lights,
 /area/lv759/outdoors/landing_zone_2)
 "eCW" = (
-/mob/living/simple_animal/mouse/rat/brown,
 /obj/structure/disposalpipe/tagger/partial,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/lv759/outdoors/colony_streets/central_streets)
@@ -34827,9 +34782,11 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/north_west_street)
 "eDK" = (
-/obj/structure/closet/secure_closet/engineering_personal,
 /obj/structure/prop/hybrisa/misc/redmeter{
 	pixel_y = 32
+	},
+/obj/structure/closet/secure_closet/engineering_personal{
+	req_one_access = list(9914)
 	},
 /turf/open/floor/prison/darkbrown2,
 /area/lv759/indoors/power_plant/south_hallway)
@@ -35037,7 +34994,6 @@
 	pixel_y = 15
 	},
 /obj/item/trash/uscm_mre,
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/central_streets)
 "eFu" = (
@@ -35169,15 +35125,6 @@
 	},
 /turf/open/floor/corsat/officetiles,
 /area/lv759/indoors/power_plant/workers_canteen_kitchen)
-"eGr" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	dir = 8;
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "110";
-	name = "\improper WY-LWI StarGlider SG-200"
-	},
-/area/lv759/indoors/spaceport/starglider)
 "eGs" = (
 /obj/item/tool/warning_cone{
 	pixel_y = 26;
@@ -35379,7 +35326,7 @@
 /turf/open/hybrisa/street/sidewalk/north,
 /area/lv759/outdoors/landing_zone_2)
 "eIt" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 1
 	},
 /obj/effect/decal/medical_decals{
@@ -36226,7 +36173,9 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/indoors/caves/central_caves)
 "ePa" = (
-/obj/structure/closet/secure_closet/atmos_personal,
+/obj/structure/closet/secure_closet/atmos_personal{
+	req_one_access = list(9916)
+	},
 /turf/open/floor/corsat,
 /area/lv759/indoors/power_plant/gas_generators)
 "ePb" = (
@@ -36967,10 +36916,8 @@
 /turf/open/floor/almayer/blackfull/west,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "eVc" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "17";
-	opacity = 0
-	},
+/obj/structure/shuttle/part/dropship_wy/transparent/engine_right_exhaust,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "eVi" = (
 /obj/structure/bed/hybrisa/bunkbed3{
@@ -37264,7 +37211,7 @@
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/north_street)
 "eYd" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "18"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -37473,7 +37420,7 @@
 /turf/open/hybrisa/street/sidewalkfull,
 /area/lv759/outdoors/colony_streets/north_street)
 "eZB" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 8
 	},
 /turf/open/hybrisa/street/sidewalk/west,
@@ -37667,7 +37614,7 @@
 /turf/open/hybrisa/street/underground_unweedable,
 /area/lv759/outdoors/power_plant/transformers_north)
 "fbs" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "30"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -37952,7 +37899,6 @@
 	pixel_x = 1;
 	pixel_y = 8
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/item/stack/sheet/cardboard{
 	layer = 1;
 	pixel_y = -6;
@@ -38117,11 +38063,8 @@
 /turf/open/floor/prison/cell_stripe,
 /area/lv759/indoors/electical_systems/substation1)
 "ffl" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "96";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
+	icon_state = "96"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
 "ffm" = (
@@ -38184,7 +38127,6 @@
 /obj/effect/decal/hybrisa/trash{
 	icon_state = "trash_13"
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/item/trash/hybrisa/cuppa_joes/lid,
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/north_east_street)
@@ -39645,7 +39587,6 @@
 	icon_state = "trash_11"
 	},
 /obj/effect/decal/hybrisa/dirt_2,
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/auto_turf/hybrisa_auto_turf/layer0,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "fru" = (
@@ -39898,7 +39839,7 @@
 /turf/open/hybrisa/street/sidewalk/north,
 /area/lv759/outdoors/colony_streets/north_east_street_LZ)
 "fua" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "62"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -40422,13 +40363,6 @@
 	},
 /turf/open/auto_turf/hybrisa_auto_turf/layer3,
 /area/lv759/indoors/caves/wy_research_complex_entrance)
-"fxJ" = (
-/obj/structure/machinery/power/terminal,
-/obj/structure/machinery/mech_bay_recharge_port{
-	name = "Power Port"
-	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "fxN" = (
 /obj/item/storage/backpack/general_belt,
 /obj/item/storage/backpack/general_belt,
@@ -40611,9 +40545,6 @@
 /area/lv759/indoors/recycling_plant_office)
 "fzp" = (
 /obj/effect/decal/hybrisa/dirt,
-/obj/structure/machinery/power/terminal{
-	dir = 4
-	},
 /turf/open/floor/plating,
 /area/lv759/indoors/colonial_marshals/garage)
 "fzq" = (
@@ -40912,9 +40843,11 @@
 /turf/open/hybrisa/street/sidewalk/north,
 /area/lv759/outdoors/colony_streets/east_central_street)
 "fAV" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
-	icon_state = "leftengine_1"
+/obj/structure/shuttle/part/dropship_wy/transparent/left_engine{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/horizon_runner)
 "fAW" = (
 /obj/structure/largecrate/random/barrel/brown,
@@ -42130,10 +42063,6 @@
 	layer = 2
 	},
 /obj/structure/surface/table/almayer,
-/obj/item/tool/kitchen/utensil/pfork{
-	pixel_x = -16;
-	pixel_y = 1
-	},
 /obj/item/storage/box/donkpockets{
 	pixel_x = 8;
 	pixel_y = 7
@@ -42354,7 +42283,7 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/indoors/caves/north_caves/east)
 "fNP" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "75"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -42552,7 +42481,6 @@
 /obj/effect/decal/hybrisa/trash{
 	icon_state = "trash_6"
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/item/trash/hybrisa/cuppa_joes/lid,
 /turf/open/floor/prison/cell_stripe/west,
 /area/lv759/outdoors/colony_streets/east_central_street)
@@ -43433,9 +43361,11 @@
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/indoors/caves/north_caves/east)
 "fVW" = (
-/obj/structure/closet/secure_closet/engineering_personal,
 /obj/structure/machinery/light{
 	dir = 1
+	},
+/obj/structure/closet/secure_closet/engineering_personal{
+	req_one_access = list(9914)
 	},
 /turf/open/floor/prison/darkbrown2,
 /area/lv759/indoors/power_plant/south_hallway)
@@ -44155,7 +44085,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/research/containment/floor2/north,
+/turf/open/floor/almayer/research/containment/floor2,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "gbp" = (
 /obj/structure/largecrate/random/case/small,
@@ -44283,8 +44213,6 @@
 "gch" = (
 /obj/structure/platform/stone/hybrisa/rockdark/east,
 /obj/structure/platform/stone/hybrisa/rockdark,
-/mob/living/simple_animal/mouse/rat/gray,
-/mob/living/simple_animal/mouse/rat/brown,
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "gcj" = (
@@ -45047,12 +44975,13 @@
 /turf/open/floor/corsat/officetiles,
 /area/lv759/indoors/spaceport/starglider)
 "gid" = (
-/obj/structure/machinery/landinglight/ds2/spoke{
-	pixel_x = 12;
-	pixel_y = -6
+/obj/item/stack/cable_coil/cut{
+	icon_state = "coil2"
 	},
-/turf/open/floor/prison/darkredfull2,
-/area/lv759/outdoors/landing_zone_1)
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "27"
+	},
+/area/lv759/indoors/spaceport/starglider)
 "gig" = (
 /turf/open/floor/hybrisa/carpet/carpetfadedred,
 /area/lv759/indoors/apartment/eastbedrooms)
@@ -45271,7 +45200,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N"
 	},
-/mob/living/simple_animal/mouse/rat/white,
 /obj/effect/decal/hybrisa/dirt,
 /obj/structure/prop/hybrisa/misc/buildinggreebliessmall/smallvent3{
 	pixel_y = 28;
@@ -46482,11 +46410,8 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/north_street)
 "gvB" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "89";
-	name = "\improper WY-LWI StarGlider SG-200"
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "89"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "gvD" = (
@@ -47849,7 +47774,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "E"
 	},
-/mob/living/simple_animal/mouse/rat/white,
 /obj/effect/decal/hybrisa/dirt,
 /obj/effect/decal/strata_decals/grime/grime3{
 	icon_state = "grime1"
@@ -47967,7 +47891,7 @@
 /turf/open/hybrisa/street/sidewalkfull,
 /area/lv759/outdoors/colony_streets/central_streets)
 "gHV" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 1
 	},
 /obj/effect/decal/medical_decals{
@@ -48364,7 +48288,7 @@
 /turf/open/floor/prison/sterile_white,
 /area/lv759/indoors/hospital/reception)
 "gKH" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "56"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -49272,7 +49196,7 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/indoors/wy_security/checkpoint_east)
 "gSm" = (
-/obj/structure/prop/hybrisa/airport/dropshipvent2right,
+/obj/structure/shuttle/part/dropship_wy/transparent/engine_right_cap,
 /turf/open/floor/plating,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "gSn" = (
@@ -49333,9 +49257,8 @@
 /turf/open/floor/hybrisa/carpet/carpetblue,
 /area/lv759/indoors/apartment/westentertainment)
 "gSF" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "99"
-	},
+/obj/structure/shuttle/part/dropship_wy/nose_front_right,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "gSH" = (
 /obj/item/stack/sheet/wood{
@@ -49468,9 +49391,8 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/electical_systems/substation3)
 "gTz" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "95"
-	},
+/obj/structure/shuttle/part/dropship_wy/nose_front_left,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "gTD" = (
 /obj/effect/decal/hybrisa/road/roadmiddle{
@@ -49576,7 +49498,7 @@
 /turf/open/floor/prison/sterile_white,
 /area/lv759/indoors/hospital/paramedics_garage)
 "gUu" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
 /obj/effect/decal/hybrisa/dirt,
@@ -49628,11 +49550,8 @@
 /turf/open/floor/freezerfloor,
 /area/lv759/indoors/wy_research_complex/cafeteriakitchen)
 "gUZ" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "86";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
+	icon_state = "86"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
 "gVa" = (
@@ -50466,7 +50385,6 @@
 /area/lv759/indoors/caves/north_caves)
 "hcX" = (
 /obj/effect/decal/hybrisa/dirt_2,
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/item/shard,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/indoors/hobosecret)
@@ -51117,13 +51035,11 @@
 	},
 /obj/item/attachable/suppressor,
 /obj/effect/spawner/random/attachment,
-/obj/item/prop/helmetgarb/netting,
 /obj/item/attachable/scope/mini,
 /obj/structure/machinery/light{
 	dir = 4
 	},
 /obj/structure/closet/crate/green,
-/obj/item/prop/helmetgarb/raincover,
 /obj/item/storage/pouch/machete,
 /turf/open/floor/interior/wood,
 /area/lv759/indoors/jacks_surplus)
@@ -51729,7 +51645,6 @@
 	color = "#6b675e"
 	},
 /obj/item/tool/kitchen/tray,
-/obj/item/reagent_container/glass/beaker/silver,
 /obj/item/reagent_container/glass/beaker,
 /obj/item/reagent_container/glass/beaker,
 /obj/item/reagent_container/glass/beaker,
@@ -52605,7 +52520,7 @@
 /turf/open/hybrisa/street/underground_unweedable,
 /area/lv759/outdoors/colony_streets/central_streets)
 "huz" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "94"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -53048,12 +52963,12 @@
 /turf/open/floor/prison/whitegreenfull,
 /area/lv759/indoors/weymart)
 "hyA" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/obj/structure/shuttle/part/dropship_wy/transparent/middle_right_wing{
 	icon_state = "zwing8";
-	opacity = 0;
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/horizon_runner)
 "hyD" = (
 /obj/structure/platform/metal/strata/north,
@@ -53323,7 +53238,6 @@
 /turf/open/floor/prison/red/east,
 /area/lv759/indoors/colonial_marshals/prisoners_foyer)
 "hAo" = (
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/effect/hybrisa/misc/fake/pipes/pipe5{
 	dir = 4;
 	pixel_y = -1;
@@ -56265,10 +56179,6 @@
 /obj/structure/pipes/vents/pump_hybrisa,
 /turf/open/floor/prison/darkbrown2/north,
 /area/lv759/indoors/power_plant/south_hallway)
-"hWZ" = (
-/obj/structure/machinery/landinglight/ds2/spoke,
-/turf/open/floor/strata/orange_edge/west,
-/area/lv759/indoors/wy_research_complex/hangarbay)
 "hXe" = (
 /obj/structure/platform_decoration/metal/hybrisa/engineer_corner,
 /obj/structure/platform_decoration/metal/hybrisa/engineer_corner/west,
@@ -56510,9 +56420,8 @@
 /turf/open/floor/hybrisa/tile/tilebeigecheckered,
 /area/lv759/indoors/colonial_marshals/north_office)
 "hYZ" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "15"
-	},
+/obj/structure/shuttle/part/dropship_wy/lower_right_wall,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "hZa" = (
 /obj/structure/window/framed/hybrisa/colony/office,
@@ -56867,7 +56776,9 @@
 /area/lv759/outdoors/mining_outpost/south_entrance)
 "ibD" = (
 /obj/structure/machinery/light/small,
-/obj/structure/closet/secure_closet/engineering_personal,
+/obj/structure/closet/secure_closet/engineering_personal{
+	req_one_access = list(9914)
+	},
 /turf/open/floor/prison/darkbrown2/northwest,
 /area/lv759/indoors/power_plant/south_hallway)
 "ibR" = (
@@ -57545,7 +57456,7 @@
 	name = "Mounted Flash";
 	pixel_y = 30
 	},
-/turf/open/floor/almayer/research/containment/corner_var1/containment_corner_variant_2,
+/turf/open/floor/almayer/research/containment/corner,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "igX" = (
 /obj/structure/machinery/light/blue{
@@ -58055,7 +57966,6 @@
 "iln" = (
 /obj/effect/decal/hybrisa/dirt_2,
 /obj/effect/decal/hybrisa/dirt,
-/mob/living/simple_animal/mouse/rat/brown,
 /obj/effect/decal/hybrisa/dirt_2,
 /turf/open/floor/plating/platingdmg1,
 /area/lv759/indoors/hobosecret)
@@ -58070,10 +57980,6 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/east_central_street_left)
 "ilr" = (
-/obj/structure/machinery/landinglight/ds2/spoke{
-	pixel_x = -12;
-	pixel_y = -6
-	},
 /obj/effect/decal/hybrisa/dirt,
 /obj/effect/sentry_landmark/lz_1/top_left,
 /turf/open/floor/prison/darkredfull2,
@@ -58767,7 +58673,6 @@
 /obj/structure/machinery/portable_atmospherics/powered/scrubber/huge/stationary{
 	layer = 4
 	},
-/obj/structure/machinery/power/terminal,
 /obj/structure/prop/invuln/overhead_pipe{
 	color = "#a6aeab";
 	dir = 10
@@ -59983,16 +59888,15 @@
 /turf/open/floor/prison/red/east,
 /area/lv759/indoors/wy_security/checkpoint_east)
 "izq" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "23";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "23"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "izu" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "zwing2";
-	opacity = 0
+/obj/structure/shuttle/part/dropship_wy/transparent/middle_left_wing{
+	icon_state = "zwing2"
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "izx" = (
 /obj/structure/prop/almayer/missile_tube{
@@ -60282,7 +60186,7 @@
 /obj/structure/machinery/light/double/blue{
 	dir = 4
 	},
-/turf/open/floor/almayer/research/containment/corner_var1/east,
+/turf/open/floor/almayer/research/containment/corner/west,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "iBo" = (
 /obj/effect/decal/warning_stripes{
@@ -61934,7 +61838,10 @@
 /turf/closed/wall/hybrisa/colony,
 /area/lv759/indoors/mining_outpost/north)
 "iOU" = (
-/obj/structure/prop/hybrisa/airport/dropshipventleft,
+/obj/structure/shuttle/part/dropship_wy/transparent/outer_left_weapons{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/hybrisa/metal/yellow_warning_floor,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "iPq" = (
@@ -62364,7 +62271,7 @@
 /turf/open/floor/prison/whitegreen/northwest,
 /area/lv759/indoors/hospital/reception)
 "iSX" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "wy_rightengine"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -63634,13 +63541,6 @@
 	dir = 1;
 	layer = 2
 	},
-/obj/item/tool/kitchen/utensil/pspoon{
-	pixel_y = 1
-	},
-/obj/item/tool/kitchen/utensil/pknife{
-	pixel_x = 8;
-	pixel_y = -1
-	},
 /turf/open/floor/corsat/officetiles,
 /area/lv759/indoors/wy_research_complex/cafeteriakitchen)
 "jdS" = (
@@ -64173,7 +64073,6 @@
 	},
 /obj/item/stack/sheet/cardboard,
 /obj/effect/decal/hybrisa/dirt,
-/mob/living/simple_animal/mouse/rat/brown,
 /obj/item/trash/hybrisa/cuppa_joes/empty_cup,
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/east_central_street)
@@ -64235,12 +64134,6 @@
 	},
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/north_east_street_LZ)
-"jiL" = (
-/obj/structure/machinery/landinglight/ds2/spoke{
-	pixel_y = -6
-	},
-/turf/open/floor/prison/darkredfull2,
-/area/lv759/outdoors/landing_zone_1)
 "jiN" = (
 /obj/structure/pipes/standard/simple/hidden/dark{
 	dir = 4
@@ -64877,12 +64770,10 @@
 /turf/open/floor/wood,
 /area/lv759/indoors/apartment/eastbedrooms)
 "jnS" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
-	icon_state = "consoleright";
-	opacity = 0;
-	icon = 'icons/obj/structures/machinery/shuttle-parts.dmi';
-	name = "\improper WY-LWI StarGlider SG-200";
-	can_block_movement = 1
+/obj/structure/blocker/invisible_wall,
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
+	icon_state = "brokendropshipconsole3";
+	opacity = 0
 	},
 /area/lv759/indoors/spaceport/starglider)
 "jnW" = (
@@ -65208,10 +65099,10 @@
 /turf/open/floor/bcarpet02/southeast,
 /area/lv759/bunker/gonzo)
 "jqQ" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "zwing6";
-	opacity = 0
+/obj/structure/shuttle/part/dropship_wy/transparent/middle_right_wing{
+	icon_state = "zwing6"
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "jqV" = (
 /obj/structure/cable/white{
@@ -65757,11 +65648,8 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/indoors/caves/central_caves)
 "jvj" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "98";
-	name = "\improper WY-LWI StarGlider SG-200"
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "98"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "jvl" = (
@@ -66010,9 +65898,6 @@
 /area/lv759/indoors/meridian/meridian_foyer)
 "jxy" = (
 /obj/item/ammo_magazine/smg/nailgun,
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
 /turf/open/floor/corsat,
 /area/lv759/indoors/power_plant/equipment_east)
 "jxD" = (
@@ -67996,12 +67881,10 @@
 /turf/open/hybrisa/street/sidewalk/south,
 /area/lv759/outdoors/colony_streets/central_streets)
 "jOS" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
-	icon_state = "console";
-	opacity = 0;
-	icon = 'icons/obj/structures/machinery/shuttle-parts.dmi';
-	name = "\improper WY-LWI StarGlider SG-200";
-	can_block_movement = 1
+/obj/structure/blocker/invisible_wall,
+/turf/closed/shuttle/dropship_wy/StarGlider{
+	icon_state = "damaged_console2";
+	opacity = 0
 	},
 /area/lv759/indoors/spaceport/starglider)
 "jOT" = (
@@ -68296,7 +68179,6 @@
 	icon_state = "trash_13";
 	pixel_y = 12
 	},
-/mob/living/simple_animal/mouse/gray,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/indoors/hobosecret)
 "jRp" = (
@@ -68482,11 +68364,8 @@
 /turf/open/hybrisa/street/sidewalk/west,
 /area/lv759/outdoors/colony_streets/north_street)
 "jSU" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "96";
-	name = "\improper WY-LWI StarGlider SG-200"
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "96"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "jSZ" = (
@@ -69327,13 +69206,6 @@
 	},
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/outdoors/caveplateau)
-"jZG" = (
-/obj/item/tool/kitchen/utensil/pfork,
-/obj/structure/pipes/standard/simple/hidden/dark{
-	dir = 4
-	},
-/turf/open/floor/almayer/blackfull/west,
-/area/lv759/indoors/wy_research_complex/cafeteria)
 "jZJ" = (
 /obj/item/tool/wet_sign{
 	pixel_x = -8;
@@ -70774,7 +70646,6 @@
 /obj/structure/platform/stone/hybrisa/rockdark,
 /obj/effect/decal/hybrisa/dirt,
 /obj/effect/decal/hybrisa/dirt_2,
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/auto_turf/hybrisa_auto_turf/layer0,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "kme" = (
@@ -70996,7 +70867,7 @@
 /turf/open/floor/hybrisa/tile/tilebeigecheckered,
 /area/lv759/indoors/apartment/westfoyer)
 "kon" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "64"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -71202,9 +71073,8 @@
 /turf/open/floor/hybrisa/tile/darkgrey_bigtile,
 /area/lv759/indoors/hospital/morgue)
 "kpl" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "32";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "32"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "kpn" = (
@@ -71449,9 +71319,11 @@
 /turf/open/floor/prison/darkyellow2,
 /area/lv759/indoors/caves/wy_research_complex_entrance)
 "kqI" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
-	icon_state = "99"
+/obj/structure/shuttle/part/dropship_wy/nose_front_right{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/prison/cell_stripe,
 /area/lv759/indoors/spaceport/horizon_runner)
 "kqJ" = (
 /obj/effect/decal/hybrisa/dirt,
@@ -72164,12 +72036,9 @@
 /turf/open/floor/hybrisa/metal/grated/north,
 /area/lv759/outdoors/colony_streets/central_streets)
 "kvx" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	dir = 4;
-	icon = 'icons/turf/dropship4.dmi';
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
 	icon_state = "110";
-	name = "\improper WY-LWI StarGlider SG-200"
+	dir = 1
 	},
 /area/lv759/indoors/spaceport/starglider)
 "kvA" = (
@@ -72490,9 +72359,6 @@
 /area/lv759/indoors/hospital/cmo_office)
 "kxW" = (
 /obj/structure/machinery/fuelcell_recycler,
-/obj/structure/machinery/power/terminal{
-	dir = 4
-	},
 /obj/structure/pipes/standard/simple/hidden/dark,
 /turf/open/floor/plating/kutjevo,
 /area/lv759/indoors/wy_research_complex/hangarbay)
@@ -72639,11 +72505,8 @@
 /turf/open/floor/prison/cell_stripe/east,
 /area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "kzd" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "103";
-	name = "\improper WY-LWI StarGlider SG-200"
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "103"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "kzg" = (
@@ -73550,7 +73413,10 @@
 /turf/open/hybrisa/street/sidewalk/south,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "kGV" = (
-/obj/structure/prop/hybrisa/airport/dropshipventright,
+/obj/structure/shuttle/part/dropship_wy/transparent/outer_right_weapons{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/hybrisa/metal/yellow_warning_floor,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "kGX" = (
@@ -74482,7 +74348,7 @@
 /turf/open/floor/hybrisa/wood/redwood,
 /area/lv759/indoors/weyyu_office/floor)
 "kPe" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "wy2"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -74891,15 +74757,6 @@
 	},
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/north_street)
-"kSe" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "test_warning_smooth_red"
-	},
-/turf/open/floor/strata/floor3,
-/area/lv759/indoors/power_plant/geothermal_generators)
 "kSf" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/structure/pipes/standard/simple/hidden/dark,
@@ -75901,7 +75758,7 @@
 /turf/open/floor/hybrisa/carpet/carpetblack,
 /area/lv759/indoors/wy_research_complex/dormsbedroom)
 "kZZ" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 4
 	},
 /obj/effect/decal/medical_decals{
@@ -76155,7 +76012,7 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer0,
 /area/lv759/indoors/caves/east_caves)
 "lca" = (
-/turf/open/floor/almayer/research/containment/floor2/north,
+/turf/open/floor/almayer/research/containment/floor1,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "lcf" = (
 /obj/structure/prop/invuln/lattice_prop{
@@ -76173,9 +76030,11 @@
 /turf/open/floor/corsat/squares,
 /area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "lcg" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
-	icon_state = "95"
+/obj/structure/shuttle/part/dropship_wy/nose_front_left{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/prison/cell_stripe,
 /area/lv759/indoors/spaceport/horizon_runner)
 "lck" = (
 /obj/item/reagent_container/food/drinks/cans/waterbottle{
@@ -76289,7 +76148,6 @@
 	icon_state = "vomit_4"
 	},
 /obj/item/stack/sheet/cardboard,
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/north_west_street)
 "ldt" = (
@@ -77280,7 +77138,7 @@
 /turf/open/floor/strata/orange_edge/west,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "lmb" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "78"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -77739,9 +77597,6 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/south_west_street)
 "lps" = (
-/mob/living/simple_animal/cat/blackcat{
-	name = "Buttons"
-	},
 /obj/effect/decal/hybrisa/dirt,
 /turf/open/floor/hybrisa/carpet/rug_colorable/pink/northwest,
 /area/lv759/indoors/apartment/eastbedroomsstorage)
@@ -78785,10 +78640,6 @@
 "lxj" = (
 /turf/closed/wall/hybrisa/colony,
 /area/lv759/outdoors/colony_streets/north_east_street)
-"lxp" = (
-/obj/structure/machinery/landinglight/ds2/spoke,
-/turf/open/floor/strata/orange_edge/east,
-/area/lv759/indoors/wy_research_complex/hangarbay)
 "lxr" = (
 /obj/structure/window/framed/hybrisa/spaceport/reinforced,
 /obj/structure/machinery/door/poddoor/hybrisa/closed_shutters{
@@ -79085,9 +78936,8 @@
 /turf/open/floor/hybrisa/metal/zbrownfloor_full,
 /area/lv759/indoors/meridian/meridian_office)
 "lzm" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "8"
-	},
+/obj/structure/shuttle/part/dropship_wy/right_inner_wing_connector,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "lzs" = (
 /obj/effect/decal/hybrisa/road/lines1,
@@ -79872,11 +79722,8 @@
 /turf/open/floor/corsat/officetiles,
 /area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "lFl" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "110";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
+	icon_state = "110"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
 "lFB" = (
@@ -80203,10 +80050,10 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer0,
 /area/lv759/outdoors/landing_zone_2/kmcc_hub_cargo_entrance_south)
 "lHm" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
-/obj/structure/machinery/landinglight/ds2/spoke{
+/obj/structure/machinery/landinglight/spoke{
 	pixel_x = -6
 	},
 /obj/effect/decal/hybrisa/dirt,
@@ -80970,7 +80817,6 @@
 /obj/effect/decal/hybrisa/trash{
 	icon_state = "trash_4"
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/item/trash/hybrisa/cuppa_joes/lid,
 /turf/open/hybrisa/street/sidewalk/north,
 /area/lv759/outdoors/colony_streets/north_east_street)
@@ -81644,9 +81490,6 @@
 /area/lv759/indoors/colonial_marshals/armory_foyer)
 "lTd" = (
 /obj/item/spacecash/c200,
-/mob/living/simple_animal/bunny/dave{
-	dir = 4
-	},
 /obj/item/moneybag,
 /obj/structure/machinery/light{
 	dir = 8
@@ -81780,7 +81623,7 @@
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/lv759/outdoors/colony_streets/central_streets)
 "lUd" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "73"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -81914,7 +81757,6 @@
 	dir = 4;
 	color = "#858680"
 	},
-/mob/living/simple_animal/mouse/rat/brown,
 /obj/structure/prop/hybrisa/misc/buildinggreebliessmall/smallvent2{
 	pixel_x = 6;
 	pixel_y = 25
@@ -82029,7 +81871,6 @@
 	icon_state = "trash_10";
 	pixel_y = 12
 	},
-/mob/living/simple_animal/mouse/rat/brown,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "lWg" = (
@@ -82907,7 +82748,7 @@
 /turf/open/floor/strata/orange_edge/west,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "mdv" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "19"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -83117,7 +82958,6 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/mob/living/simple_animal/mouse/rat/brown,
 /turf/open/hybrisa/street/sidewalk/west,
 /area/lv759/outdoors/colony_streets/north_street)
 "mfb" = (
@@ -84127,7 +83967,6 @@
 	},
 /obj/effect/decal/hybrisa/dirt,
 /obj/structure/machinery/light/small/blue,
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/central_streets)
 "mnt" = (
@@ -84145,12 +83984,12 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/landing_zone_2)
 "mnv" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/obj/structure/shuttle/part/dropship_wy/transparent/lower_right_wing{
 	icon_state = "zwing7";
-	opacity = 0;
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/horizon_runner)
 "mnw" = (
 /obj/effect/decal/hybrisa/road/lines5,
@@ -84480,7 +84319,7 @@
 /turf/open/floor/strata/multi_tiles/west,
 /area/lv759/indoors/spaceport/security_office)
 "mpY" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "72"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -85638,9 +85477,6 @@
 "myF" = (
 /obj/effect/decal/hybrisa/dirt,
 /obj/structure/machinery/portable_atmospherics/powered/pump,
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/indoors/mining_outpost/south)
 "myK" = (
@@ -85769,9 +85605,11 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_cargo)
 "mzu" = (
-/mob/living/simple_animal/mouse/rat/black,
-/turf/open/floor/plating/platingdmg3/west,
-/area/lv759/indoors/hobosecret)
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/almayer/research/containment/entrance/east,
+/area/lv759/indoors/wy_research_complex/xenobiology)
 "mzz" = (
 /obj/structure/surface/table/reinforced,
 /obj/effect/decal/warning_stripes{
@@ -87193,7 +87031,7 @@
 /turf/open/floor/strata/floor3,
 /area/lv759/indoors/spaceport/cuppajoes)
 "mLd" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "24"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -87627,10 +87465,10 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/north_street)
 "mPd" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "zwing8";
-	opacity = 0
+/obj/structure/shuttle/part/dropship_wy/transparent/middle_right_wing{
+	icon_state = "zwing8"
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "mPj" = (
 /obj/effect/decal/hybrisa/dirt,
@@ -88671,7 +88509,7 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/north_street)
 "mYZ" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "62"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -88782,7 +88620,6 @@
 	pixel_x = -7;
 	pixel_y = 13
 	},
-/mob/living/simple_animal/mouse/rat/brown,
 /obj/structure/pipes/standard/simple/hidden/dark{
 	dir = 4
 	},
@@ -89029,11 +88866,8 @@
 /turf/open/floor/prison/ramptop/east,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_cargo)
 "nbv" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "98";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
+	icon_state = "98"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
 "nbx" = (
@@ -89162,16 +88996,9 @@
 /obj/effect/decal/hybrisa/dirt,
 /turf/open/hybrisa/street/sidewalk/south,
 /area/lv759/outdoors/colony_streets/north_west_street)
-"nck" = (
-/obj/structure/machinery/landinglight/ds2/spoke{
-	pixel_x = -12;
-	pixel_y = -6
-	},
-/turf/open/floor/plating/plating_catwalk/prison,
-/area/lv759/outdoors/landing_zone_1)
 "ncm" = (
 /obj/effect/decal/hybrisa/dirt,
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
 /turf/open/floor/prison/ramptop,
@@ -89266,7 +89093,7 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "ndc" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
 /turf/open/hybrisa/street/sidewalk/northeast,
@@ -89467,7 +89294,7 @@
 /turf/open/floor/hybrisa/tile/tilewhite,
 /area/lv759/indoors/apartment/westbedrooms)
 "neM" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "67"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -89800,12 +89627,12 @@
 /turf/open/floor/hybrisa/tile/tilewhite,
 /area/lv759/indoors/hospital/virology)
 "nhW" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/obj/structure/shuttle/part/dropship_wy/transparent/middle_right_wing{
 	icon_state = "zwing6";
-	opacity = 0;
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/horizon_runner)
 "nhZ" = (
 /obj/structure/bed/chair/office/light,
@@ -89912,7 +89739,7 @@
 /turf/open/hybrisa/street/sidewalk/north,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "niS" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 1
 	},
 /obj/effect/decal/medical_decals{
@@ -90133,7 +89960,6 @@
 /obj/structure/machinery/mech_bay_recharge_port{
 	name = "Power Port"
 	},
-/obj/structure/machinery/power/terminal,
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "nkM" = (
@@ -90888,14 +90714,6 @@
 "nqV" = (
 /turf/open/hybrisa/street/roadlines4,
 /area/lv759/outdoors/colony_streets/north_east_street)
-"nri" = (
-/obj/item/tool/kitchen/utensil/pknife,
-/obj/item/tool/kitchen/utensil/pspoon,
-/obj/structure/surface/table/almayer{
-	color = "#848484"
-	},
-/turf/open/floor/almayer/blackfull/west,
-/area/lv759/indoors/wy_research_complex/cafeteria)
 "nrj" = (
 /obj/effect/decal/hybrisa/dirt,
 /obj/structure/pipes/standard/manifold/hidden/dark{
@@ -90992,9 +90810,8 @@
 /turf/open/floor/prison/darkbrown2/northeast,
 /area/lv759/indoors/recycling_plant/synthetic_storage)
 "nsg" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "26";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "26"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "nsh" = (
@@ -91188,8 +91005,8 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/outdoors/caves/north_west_caves_outdoors)
 "ntK" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo,
-/obj/structure/machinery/landinglight/ds2/spoke{
+/obj/structure/machinery/landinglight/delaytwo,
+/obj/structure/machinery/landinglight/spoke{
 	pixel_y = 12;
 	pixel_x = -6
 	},
@@ -91707,7 +91524,7 @@
 	},
 /area/lv759/indoors/weymart)
 "nyq" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 1
 	},
 /obj/effect/decal/medical_decals{
@@ -92878,17 +92695,10 @@
 /obj/effect/decal/hybrisa/gold/line2,
 /turf/open/floor/prison/red/east,
 /area/lv759/indoors/colonial_marshals/press_room)
-"nHU" = (
-/obj/structure/prop/hybrisa/airport/dropshipventleft,
-/turf/open/floor/plating,
-/area/lv759/indoors/spaceport/docking_bay_1)
 "nHV" = (
 /obj/structure/machinery/power/smes/buildable{
 	capacity = 1e+006;
 	dir = 1
-	},
-/obj/structure/machinery/power/terminal{
-	dir = 4
 	},
 /turf/open/floor/corsat,
 /area/lv759/indoors/power_plant/geothermal_generators)
@@ -92901,12 +92711,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/lv759/outdoors/power_plant/transformers_south)
-"nIl" = (
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "nIr" = (
 /obj/structure/prop/hybrisa/fakeplatforms/platform3{
 	dir = 8
@@ -93116,9 +92920,7 @@
 /turf/open/floor/corsat/officesquares,
 /area/lv759/indoors/recycling_plant_waste_disposal_incinerator)
 "nKB" = (
-/obj/structure/prop/hybrisa/airport/dropshipnosecone{
-	dir = 1
-	},
+/obj/structure/shuttle/part/dropship_wy/transparent/nose_top_right,
 /turf/open/floor/prison/ramptop/north,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "nKC" = (
@@ -93910,7 +93712,6 @@
 	name = "\improper UA Prepared Meal (cornbread)";
 	pixel_y = 9
 	},
-/obj/item/tool/kitchen/utensil/pknife,
 /obj/structure/surface/table/almayer{
 	color = "#848484"
 	},
@@ -94202,7 +94003,10 @@
 /turf/open/floor/shiva/radiator_tile2,
 /area/lv759/indoors/wy_research_complex/hangarbay)
 "nSM" = (
-/obj/structure/prop/hybrisa/airport/dropshipventright,
+/obj/structure/shuttle/part/dropship_wy/transparent/outer_right_weapons{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/plating,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "nST" = (
@@ -94346,7 +94150,7 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/indoors/caves/west_caves)
 "nTR" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 1
 	},
 /obj/effect/decal/medical_decals{
@@ -95145,7 +94949,6 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/north_street)
 "nYW" = (
-/obj/structure/machinery/landinglight/ds2/spoke,
 /turf/open/floor/strata/orange_edge/southeast,
 /area/lv759/indoors/wy_research_complex/hangarbay)
 "nZa" = (
@@ -95419,7 +95222,6 @@
 	pixel_x = -8;
 	pixel_y = 12
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/outdoors/colony_streets/north_street)
 "oaS" = (
@@ -95539,7 +95341,7 @@
 /turf/open/floor/hybrisa/metal/grated/north,
 /area/lv759/indoors/garage_workshop)
 "oca" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo,
+/obj/structure/machinery/landinglight/delaytwo,
 /obj/effect/decal/hybrisa/dirt,
 /turf/open/floor/prison/ramptop,
 /area/lv759/outdoors/landing_zone_2)
@@ -95760,7 +95562,6 @@
 /obj/item/stack/sheet/cardboard{
 	layer = 1
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/hybrisa/street/sidewalk/west,
 /area/lv759/outdoors/colony_streets/north_street)
 "odZ" = (
@@ -95898,7 +95699,6 @@
 /obj/effect/decal/hybrisa/trash{
 	icon_state = "trash_13"
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/floor/hybrisa/metal/grated/north,
 /area/lv759/outdoors/colony_streets/north_west_street)
 "oeX" = (
@@ -96761,7 +96561,7 @@
 /turf/open/floor/corsat/officetiles,
 /area/lv759/indoors/power_plant/workers_canteen_kitchen)
 "olW" = (
-/obj/structure/prop/hybrisa/airport/dropshipvent1left,
+/obj/structure/shuttle/part/dropship_wy/transparent/engine_left_cap,
 /turf/open/floor/plating,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "olX" = (
@@ -96890,11 +96690,6 @@
 /turf/open/floor/prison/floor_plate/southwest,
 /area/lv759/outdoors/colony_streets/north_street)
 "onH" = (
-/obj/item/ammo_magazine/pistol/heavy,
-/obj/item/ammo_magazine/pistol/heavy,
-/obj/item/ammo_magazine/pistol/heavy,
-/obj/item/ammo_magazine/pistol/heavy,
-/obj/item/weapon/gun/pistol/heavy,
 /obj/structure/surface/table/reinforced/prison{
 	color = "#98a3ab"
 	},
@@ -96973,7 +96768,6 @@
 /turf/open/floor/almayer/black/southwest,
 /area/lv759/indoors/wy_research_complex/hallwaysouthwest)
 "onU" = (
-/mob/living/simple_animal/mouse/rat/black,
 /obj/structure/pipes/standard/simple/hidden/dark{
 	dir = 4
 	},
@@ -97695,12 +97489,12 @@
 /turf/open/floor/almayer/silver/east,
 /area/lv759/indoors/wy_research_complex/xenoarcheology)
 "otP" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/obj/structure/shuttle/part/dropship_wy/transparent/middle_left_wing{
 	icon_state = "zwing2";
-	opacity = 0;
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/horizon_runner)
 "otQ" = (
 /obj/structure/disposalpipe/tagger{
@@ -98453,7 +98247,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
-/mob/living/simple_animal/mouse/rat/white,
 /obj/effect/decal/strata_decals/grime/grime3{
 	icon_state = "grime1"
 	},
@@ -98862,7 +98655,7 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/caves/north_caves)
 "oEn" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "48"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -99926,9 +99719,6 @@
 /turf/open/floor/strata/floor3,
 /area/lv759/indoors/wy_research_complex/mainlabs)
 "oNM" = (
-/obj/structure/machinery/power/terminal{
-	dir = 4
-	},
 /obj/structure/prop/static_tank/fuel,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_fuel)
@@ -100762,7 +100552,6 @@
 	},
 /area/lv759/oob)
 "oUt" = (
-/obj/structure/machinery/power/terminal,
 /obj/item/clothing/head/helmet/hybrisa/kelland_mining_helmet,
 /turf/open/floor/plating,
 /area/lv759/indoors/mining_outpost/south)
@@ -102122,9 +101911,8 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/central_streets)
 "pgp" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "22";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "22"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "pgr" = (
@@ -102377,7 +102165,7 @@
 /turf/open/floor/almayer/plating_striped/west,
 /area/lv759/indoors/spaceport/cargo_maintenance)
 "pit" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "75"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -102474,7 +102262,11 @@
 /turf/open/floor/hybrisa/tile/tilebeigecheckered,
 /area/lv759/indoors/apartment/westfoyer)
 "piP" = (
-/obj/structure/prop/hybrisa/airport/dropshipwingright,
+/obj/structure/shuttle/part/dropship_wy/transparent/upper_right_wing{
+	icon_state = "zwing5";
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/plating,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "piQ" = (
@@ -103663,9 +103455,8 @@
 /turf/closed/wall/hybrisa/colony,
 /area/lv759/indoors/pizzaria)
 "psE" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "29";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "29"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "psH" = (
@@ -104037,9 +103828,8 @@
 /turf/open/floor/corsat/spiralplate,
 /area/lv759/indoors/wy_research_complex/mainlabs)
 "pvO" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "2"
-	},
+/obj/structure/shuttle/part/dropship_wy/transparent/left_outer_inner_wing,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "pvU" = (
 /turf/open/floor/prison,
@@ -106228,7 +106018,7 @@
 /turf/open/floor/prison/whitered/north,
 /area/lv759/indoors/hospital/medical_storage)
 "pNG" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "wy_leftengine"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -106523,12 +106313,6 @@
 	},
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/east_central_street)
-"pQa" = (
-/obj/structure/machinery/landinglight/ds2/spoke{
-	pixel_x = -12
-	},
-/turf/open/floor/plating/plating_catwalk/prison,
-/area/lv759/outdoors/landing_zone_1)
 "pQd" = (
 /obj/structure/platform/metal/almayer/north,
 /obj/structure/cargo_container/hybrisa/containersextended/tanleft,
@@ -106673,7 +106457,7 @@
 /turf/closed/wall/hybrisa/colony,
 /area/lv759/indoors/mining_outpost/north)
 "pRp" = (
-/turf/open/floor/almayer/research/containment/corner_var1/east,
+/turf/open/floor/almayer/research/containment/corner_var1/north,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "pRr" = (
 /turf/closed/wall/hybrisa/colony/hospital,
@@ -107555,7 +107339,7 @@
 /turf/open/gm/river/desert/shallow,
 /area/lv759/indoors/apartment/westentertainment)
 "pYG" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "83"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -108690,9 +108474,8 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/south_west_street)
 "qiE" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "3"
-	},
+/obj/structure/shuttle/part/dropship_wy/left_outer_wing_connector,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "qiJ" = (
 /obj/structure/platform/stone/hybrisa/rockdark,
@@ -109403,9 +109186,13 @@
 /turf/open/floor/plating/engineer_ship,
 /area/lv759/indoors/derelict_ship)
 "qoO" = (
-/obj/structure/prop/hybrisa/airport/dropshipventright,
-/turf/open/floor/plating,
-/area/lv759/indoors/spaceport/docking_bay_1)
+/obj/item/stack/cable_coil/cut{
+	icon_state = "coil1"
+	},
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "33"
+	},
+/area/lv759/indoors/spaceport/starglider)
 "qoY" = (
 /obj/structure/machinery/vending/walkman{
 	pixel_x = 10;
@@ -109502,8 +109289,10 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
+/obj/effect/decal/cleanable/blood,
+/obj/structure/bed/roller/hospital/bloody,
 /obj/structure/machinery/light/double/blue,
-/turf/open/floor/almayer/research/containment/floor2/north,
+/turf/open/floor/almayer/research/containment/floor2,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "qpK" = (
 /obj/structure/machinery/door/airlock/multi_tile/hybrisa/generic/autoname,
@@ -111019,7 +110808,6 @@
 /turf/closed/wall/hybrisa/colony/hospital/ribbed,
 /area/lv759/bunker/checkpoint)
 "qCa" = (
-/obj/structure/machinery/landinglight/ds2/spoke,
 /turf/open/floor/strata/orange_edge/southwest,
 /area/lv759/indoors/wy_research_complex/hangarbay)
 "qCb" = (
@@ -111564,7 +111352,7 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/caves/sensory_tower)
 "qHI" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "69"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -111744,7 +111532,6 @@
 /area/lv759/indoors/bar/entertainment)
 "qII" = (
 /obj/item/trash/tray,
-/obj/item/tool/kitchen/utensil/pfork,
 /obj/structure/surface/table/almayer{
 	color = "#848484"
 	},
@@ -111759,7 +111546,7 @@
 /turf/open/floor/hybrisa/tile/tilebeige,
 /area/lv759/indoors/jacks_surplus)
 "qIK" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 4
 	},
 /obj/effect/decal/medical_decals{
@@ -111976,7 +111763,6 @@
 /turf/open/floor/strata/orange_edge/east,
 /area/lv759/indoors/weymart)
 "qKl" = (
-/obj/structure/machinery/landinglight/ds2/spoke,
 /turf/open/floor/strata/orange_edge/northeast,
 /area/lv759/indoors/wy_research_complex/hangarbay)
 "qKr" = (
@@ -112332,7 +112118,7 @@
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/lv759/indoors/caves/wy_research_complex_entrance)
 "qMQ" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "69"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -112811,7 +112597,7 @@
 /turf/open/floor/prison/ramptop,
 /area/lv759/indoors/colonial_marshals/garage)
 "qQE" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "zwing0"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -112895,15 +112681,6 @@
 "qRx" = (
 /obj/structure/surface/table/woodentable/fancy,
 /obj/item/storage/photo_album,
-/obj/item/clothing/accessory/medal/bronze/conduct{
-	pixel_y = 4;
-	pixel_x = -2;
-	layer = 3.03
-	},
-/obj/item/clothing/accessory/medal/bronze/heart{
-	pixel_y = 12;
-	pixel_x = 4
-	},
 /turf/open/floor/hybrisa/carpet/carpetpatternbrown,
 /area/lv759/indoors/apartment/northapartments)
 "qRC" = (
@@ -113418,7 +113195,7 @@
 /turf/open/hybrisa/street/sidewalk/west,
 /area/lv759/outdoors/colony_streets/north_west_street)
 "qVH" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "36"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -113787,10 +113564,12 @@
 /turf/open/floor/strata/floor3,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "qZp" = (
+/obj/item/stack/rods{
+	amount = 25
+	},
 /obj/structure/prop/hybrisa/airport/dropshipenginedamagenofire,
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "26";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "26"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "qZq" = (
@@ -113971,7 +113750,6 @@
 	pixel_x = 1;
 	pixel_y = 8
 	},
-/mob/living/simple_animal/mouse/rat/brown,
 /turf/open/floor/prison/floor_plate/southwest,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "rat" = (
@@ -114006,7 +113784,7 @@
 /turf/open/floor/almayer/black/northeast,
 /area/lv759/indoors/wy_research_complex/head_research_office)
 "raT" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo,
+/obj/structure/machinery/landinglight/delaytwo,
 /obj/effect/decal/hybrisa/dirt,
 /turf/open/hybrisa/street/sidewalk/southeast,
 /area/lv759/outdoors/landing_zone_2)
@@ -114669,11 +114447,6 @@
 /obj/effect/decal/hybrisa/road/lines1,
 /turf/open/floor/prison/darkyellow2/southeast,
 /area/lv759/indoors/caves/wy_research_complex_entrance)
-"rgl" = (
-/obj/effect/decal/hybrisa/dirt,
-/mob/living/simple_animal/mouse/rat/gray,
-/turf/open/floor/plating/platingdmg3/west,
-/area/lv759/indoors/hobosecret)
 "rgq" = (
 /obj/item/tool/warning_cone,
 /obj/item/tool/warning_cone{
@@ -114754,9 +114527,6 @@
 /area/lv759/outdoors/landing_zone_2)
 "rgH" = (
 /obj/structure/machinery/fuelcell_recycler,
-/obj/structure/machinery/power/terminal{
-	dir = 4
-	},
 /obj/item/fuel_cell,
 /obj/structure/pipes/standard/simple/hidden/dark,
 /turf/open/floor/plating/kutjevo,
@@ -115558,7 +115328,11 @@
 /turf/open/floor/corsat/officetiles,
 /area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "roc" = (
-/obj/structure/prop/hybrisa/airport/dropshipwingleft,
+/obj/structure/shuttle/part/dropship_wy/transparent/upper_left_wing{
+	icon_state = "zwing1";
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/plating,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "roe" = (
@@ -116247,7 +116021,7 @@
 /area/lv759/indoors/caves/south_east_caves)
 "rui" = (
 /obj/item/stack/sheet/metal,
-/obj/structure/prop/hybrisa/airport/dropshipvent2right,
+/obj/structure/shuttle/part/dropship_wy/transparent/engine_right_cap,
 /turf/open/floor/plating,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "ruo" = (
@@ -117853,7 +117627,6 @@
 	dir = 1
 	},
 /obj/structure/machinery/fuelcell_recycler,
-/obj/structure/machinery/power/terminal,
 /turf/open/floor/corsat,
 /area/lv759/indoors/power_plant/equipment_east)
 "rFn" = (
@@ -118077,12 +117850,9 @@
 /turf/open/floor/hybrisa/metal/yellow_warning_floor,
 /area/lv759/indoors/colonial_marshals/prisoners_recreation_area)
 "rGM" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	dir = 1;
-	icon = 'icons/turf/dropship4.dmi';
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
 	icon_state = "110";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+	dir = 1
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
 "rGO" = (
@@ -118098,7 +117868,10 @@
 /turf/open/floor/hybrisa/metal/bluemetalfull,
 /area/lv759/indoors/spaceport/flight_control_room)
 "rGT" = (
-/obj/structure/prop/hybrisa/airport/dropshipventleft,
+/obj/structure/shuttle/part/dropship_wy/transparent/outer_left_weapons{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/plating,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "rGY" = (
@@ -118296,7 +118069,7 @@
 /turf/open/hybrisa/street/underground_unweedable,
 /area/lv759/indoors/wy_research_complex/hallwaysouthwest)
 "rIB" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
 /turf/open/hybrisa/street/sidewalk/east,
@@ -118916,7 +118689,7 @@
 /turf/open/floor/hybrisa/wood/darkerwood,
 /area/lv759/indoors/colonial_marshals/north_office)
 "rNc" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "94"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -118985,9 +118758,6 @@
 	pixel_x = -1;
 	pixel_y = 17
 	},
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/lv759/indoors/wy_research_complex/vehicledeploymentbay)
 "rNB" = (
@@ -119054,9 +118824,6 @@
 /turf/open/floor/wood,
 /area/lv759/indoors/hospital/cmo_office)
 "rNS" = (
-/obj/structure/machinery/power/terminal{
-	dir = 4
-	},
 /obj/structure/prop/static_tank/fuel,
 /turf/open/floor/plating,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_fuel)
@@ -119262,9 +119029,8 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/east_central_street)
 "rPD" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "28";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "28"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "rPF" = (
@@ -119503,10 +119269,11 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N"
 	},
-/obj/structure/prop/hybrisa/airport/dropshipnosecone{
-	dir = 4
-	},
 /obj/effect/decal/hybrisa/dirt,
+/obj/structure/shuttle/part/dropship_wy/transparent/nose_center{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/prison/ramptop/north,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "rRC" = (
@@ -120464,7 +120231,8 @@
 /turf/open/floor/prison/whitegreen/north,
 /area/lv759/indoors/hospital/cryo_room)
 "rYL" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/obj/structure/blocker/invisible_wall,
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "brokendropshipconsole1";
 	opacity = 0
 	},
@@ -121360,8 +121128,6 @@
 	icon_state = "trash_9";
 	pixel_y = 12
 	},
-/mob/living/simple_animal/mouse/rat/gray,
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/item/trash/hybrisa/cuppa_joes/lid,
 /obj/item/trash/hybrisa/cuppa_joes/empty_cup,
 /turf/open/hybrisa/street/sidewalk/northwest,
@@ -121617,7 +121383,7 @@
 /turf/open/floor/prison/red/east,
 /area/lv759/indoors/wy_research_complex/reception)
 "shi" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
 /obj/effect/decal/hybrisa/dirt,
@@ -121639,7 +121405,7 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/caves/central_caves)
 "shw" = (
-/turf/open/floor/almayer/research/containment/corner_var2,
+/turf/open/floor/almayer/research/containment/corner,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "shB" = (
 /obj/structure/machinery/power/apc/power/north{
@@ -121855,7 +121621,7 @@
 /turf/open/floor/hybrisa/carpet/carpetfadedred,
 /area/lv759/indoors/apartment/westentertainment)
 "sjm" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "47"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -124389,9 +124155,8 @@
 /turf/open/floor/plating/platingdmg3,
 /area/lv759/indoors/caves/north_caves)
 "sCE" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "5"
-	},
+/obj/structure/shuttle/part/dropship_wy/transparent/right_inner_bottom_wing,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "sCF" = (
 /obj/effect/decal/warning_stripes{
@@ -124487,9 +124252,8 @@
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/indoors/mining_outpost/processing)
 "sDH" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "33";
-	opacity = 0
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "33"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "sDJ" = (
@@ -125108,11 +124872,20 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer0,
 /area/lv759/indoors/caves/wy_research_complex_entrance)
 "sJC" = (
-/obj/structure/prop/hybrisa/airport/dropshipvent1left,
+/obj/item/stack/rods{
+	amount = 15
+	},
+/obj/item/stack/cable_coil/green{
+	icon_state = "coil1"
+	},
+/obj/item/stack/cable_coil/cut{
+	icon_state = "coil2"
+	},
 /obj/effect/decal/cleanable/generic{
 	color = "#5d524b";
 	alpha = 155
 	},
+/obj/structure/shuttle/part/dropship_wy/transparent/engine_left_cap,
 /turf/open/floor/plating,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "sJF" = (
@@ -125397,7 +125170,9 @@
 /turf/open/floor/hybrisa/carpet/carpetgreen,
 /area/lv759/indoors/recycling_plant_office)
 "sLO" = (
-/obj/structure/closet/secure_closet/engineering_personal,
+/obj/structure/closet/secure_closet/engineering_personal{
+	req_one_access = list(9914)
+	},
 /turf/open/floor/prison/darkbrown2/north,
 /area/lv759/indoors/power_plant/south_hallway)
 "sLS" = (
@@ -125685,9 +125460,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "E"
 	},
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
 /obj/structure/machinery/fuelcell_recycler,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/indoors/colonial_marshals/garage)
@@ -125893,7 +125665,6 @@
 /obj/effect/decal/hybrisa/trash{
 	icon_state = "trash_7"
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "sPG" = (
@@ -126100,10 +125871,8 @@
 /turf/open/floor/almayer/blackfull/west,
 /area/lv759/indoors/wy_research_complex/janitor)
 "sRd" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "16";
-	opacity = 0
-	},
+/obj/structure/shuttle/part/dropship_wy/transparent/engine_left_exhaust,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "sRi" = (
 /obj/effect/decal/hybrisa/dirt,
@@ -126331,7 +126100,7 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/hospital/emergency_room)
 "sTw" = (
-/obj/structure/machinery/landinglight/ds2/delaythree,
+/obj/structure/machinery/landinglight/delaythree,
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaldir";
 	color = "#d3d3d3"
@@ -126622,7 +126391,7 @@
 /turf/open/floor/hybrisa/tile/beige_bigtile,
 /area/lv759/indoors/power_plant/workers_canteen)
 "sVO" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 1
 	},
 /obj/effect/decal/medical_decals{
@@ -127369,7 +127138,8 @@
 /turf/open/floor/hybrisa/tile/tilewhite,
 /area/lv759/indoors/colonial_marshals/prisoners_recreation_area)
 "tbI" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/obj/structure/blocker/invisible_wall,
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "brokendropshipconsole3";
 	opacity = 0
 	},
@@ -127510,12 +127280,12 @@
 /turf/open/hybrisa/street/asphalt,
 /area/lv759/outdoors/colony_streets/east_central_street)
 "tcR" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/obj/structure/shuttle/part/dropship_wy/transparent/middle_left_wing{
 	icon_state = "zwing4";
-	opacity = 0;
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/horizon_runner)
 "tcV" = (
 /obj/structure/largecrate/empty,
@@ -128411,11 +128181,6 @@
 /obj/structure/platform/metal/hybrisa/metalplatform6/north,
 /turf/open/floor/hybrisa/tile/tilebeige,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_cargo)
-"tiI" = (
-/obj/effect/decal/hybrisa/dirt,
-/obj/structure/machinery/power/terminal,
-/turf/open/floor/plating,
-/area/lv759/indoors/mining_outpost/south)
 "tiJ" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	color = "#a6aeab";
@@ -128466,10 +128231,10 @@
 /turf/open/floor/hybrisa/tile/tilebeigecheckered,
 /area/lv759/indoors/apartment/westhallway)
 "tjr" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "zwing4";
-	opacity = 0
+/obj/structure/shuttle/part/dropship_wy/transparent/middle_left_wing{
+	icon_state = "zwing4"
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "tjv" = (
 /obj/structure/platform/metal/almayer/north,
@@ -129075,7 +128840,7 @@
 /turf/open/floor/hybrisa/carpet/carpetgreendeco,
 /area/lv759/indoors/jacks_surplus)
 "tnx" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "48"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -129121,7 +128886,7 @@
 /turf/open/floor/hybrisa/metal/red_warning_floor,
 /area/lv759/indoors/mining_outpost/vehicledeployment)
 "tnS" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "37"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -129495,7 +129260,7 @@
 /turf/open/floor/hybrisa/tile/tilewhitecheckered,
 /area/lv759/indoors/apartment/westentertainment)
 "tqN" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo,
+/obj/structure/machinery/landinglight/delaytwo,
 /turf/open/hybrisa/street/sidewalk/southwest,
 /area/lv759/outdoors/landing_zone_2)
 "tqO" = (
@@ -129947,7 +129712,7 @@
 /turf/open/floor/hybrisa/metal/grated,
 /area/lv759/outdoors/colony_streets/central_streets)
 "tun" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "53"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -130194,7 +129959,7 @@
 /turf/open/floor/hybrisa/misc/spaceport1,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "tvS" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
 /turf/open/floor/prison/ramptop,
@@ -130740,9 +130505,8 @@
 /turf/open/floor/hybrisa/tile/cementflat,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_lounge_hallway)
 "tzK" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "7"
-	},
+/obj/structure/shuttle/part/dropship_wy/left_inner_wing_connector,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "tzP" = (
 /obj/effect/decal/hybrisa/road/road_edge{
@@ -130806,7 +130570,7 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/indoors/caves/south_caves)
 "tAV" = (
-/turf/open/floor/almayer/research/containment/floor2/north,
+/turf/open/floor/almayer/research/containment/floor2,
 /area/lv759/indoors/wy_research_complex/mainlabs)
 "tAX" = (
 /obj/effect/decal/warning_stripes{
@@ -131834,7 +131598,6 @@
 /area/lv759/outdoors/colony_streets/south_west_street)
 "tKf" = (
 /obj/effect/decal/hybrisa/dirt,
-/mob/living/simple_animal/mouse/gray,
 /obj/item/trash/semki,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/indoors/hobosecret)
@@ -131980,7 +131743,7 @@
 	name = "Mounted Flash";
 	pixel_y = 30
 	},
-/turf/open/floor/almayer/research/containment/floor2/north,
+/turf/open/floor/almayer/research/containment/floor2,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "tLx" = (
 /turf/open/floor/hybrisa/tile/tilegrey,
@@ -132050,9 +131813,11 @@
 /turf/open/floor/hybrisa/metal/stripe_red/north,
 /area/lv759/indoors/wy_research_complex/mainlabs)
 "tLT" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
-	icon_state = "rightengine_1"
+/obj/structure/shuttle/part/dropship_wy/transparent/right_engine{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/horizon_runner)
 "tLX" = (
 /turf/closed/wall/hybrisa/colony,
@@ -132235,7 +132000,7 @@
 /obj/structure/machinery/iv_drip{
 	pixel_y = 19
 	},
-/turf/open/floor/almayer/research/containment/floor2/north,
+/turf/open/floor/almayer/research/containment/floor2,
 /area/lv759/indoors/wy_research_complex/mainlabs)
 "tNI" = (
 /obj/structure/largecrate/random/mini/small_case,
@@ -132270,11 +132035,8 @@
 /turf/open/floor/prison/blue/northeast,
 /area/lv759/indoors/power_plant/telecomms)
 "tNV" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "86";
-	name = "\improper WY-LWI StarGlider SG-200"
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "86"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "tNW" = (
@@ -132686,7 +132448,7 @@
 /turf/open/floor/prison/red/east,
 /area/lv759/indoors/colonial_marshals/reception)
 "tRr" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo,
+/obj/structure/machinery/landinglight/delaytwo,
 /obj/effect/decal/hybrisa/dirt,
 /turf/open/hybrisa/street/sidewalk/south,
 /area/lv759/outdoors/landing_zone_2)
@@ -133525,7 +133287,7 @@
 /turf/open/floor/corsat/officetiles,
 /area/lv759/indoors/mining_outpost/east_deploymentbay)
 "tYi" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
 /obj/effect/decal/hybrisa/dirt,
@@ -133783,7 +133545,7 @@
 /turf/closed/wall/hybrisa/colony/engineering,
 /area/lv759/indoors/power_plant/workers_canteen_kitchen)
 "uaC" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 4
 	},
 /obj/effect/decal/medical_decals{
@@ -133898,7 +133660,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
-/mob/living/simple_animal/mouse/rat/white/Milky,
 /turf/open/floor/hybrisa/tile/tilewhite,
 /area/lv759/indoors/wy_research_complex/mainlabs)
 "ubD" = (
@@ -134239,7 +134000,7 @@
 /turf/open/floor/corsat,
 /area/lv759/indoors/meridian/meridian_factory)
 "ufs" = (
-/obj/structure/machinery/landinglight/ds2/delaythree,
+/obj/structure/machinery/landinglight/delaythree,
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaldir";
 	color = "#d3d3d3"
@@ -134586,7 +134347,6 @@
 	icon_state = "trash_15";
 	pixel_y = 14
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/floor/hybrisa/tile/tilewhite,
 /area/lv759/indoors/south_public_restroom)
 "uih" = (
@@ -135452,11 +135212,8 @@
 /turf/closed/wall/hybrisa/rock,
 /area/lv759/indoors/caves/south_west_caves)
 "upc" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "97";
-	name = "\improper WY-LWI StarGlider SG-200"
+/turf/closed/shuttle/dropship_wy/StarGlider/transparent{
+	icon_state = "97"
 	},
 /area/lv759/indoors/spaceport/starglider)
 "upd" = (
@@ -135835,10 +135592,11 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N"
 	},
-/obj/structure/prop/hybrisa/airport/dropshipnosecone{
-	dir = 1
-	},
 /obj/effect/decal/hybrisa/dirt,
+/obj/structure/shuttle/part/dropship_wy/transparent/nose_top_right{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/prison/ramptop/north,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "usr" = (
@@ -137063,7 +136821,6 @@
 /turf/open/floor/prison/bright_clean/southwest,
 /area/lv759/indoors/power_plant)
 "uCq" = (
-/obj/structure/machinery/landinglight/ds2/spoke,
 /turf/open/floor/strata/orange_edge/northwest,
 /area/lv759/indoors/wy_research_complex/hangarbay)
 "uCr" = (
@@ -137110,8 +136867,6 @@
 	icon_state = "trash_6";
 	pixel_y = 12
 	},
-/mob/living/simple_animal/mouse/rat/brown,
-/mob/living/simple_animal/mouse/rat/brown,
 /turf/open/floor/plating/platingdmg3/west,
 /area/lv759/outdoors/colony_streets/north_street)
 "uCE" = (
@@ -137199,9 +136954,6 @@
 /turf/open/hybrisa/street/cement1,
 /area/lv759/outdoors/colony_streets/east_central_street)
 "uDs" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/liquid_fuel,
 /obj/structure/machinery/fuelcell_recycler,
 /turf/open/floor/plating/platingdmg2,
@@ -137669,15 +137421,6 @@
 /obj/structure/pipes/standard/simple/hidden/dark,
 /turf/open/floor/almayer/plate,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_south_office)
-"uGF" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI StarGlider SG-200, a product of the collaborative ingenuity between Weyland Yutani and Lunnar-Welsun Industries, is a small dropship is designed for short-range commercial transport.";
-	dir = 1;
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "110";
-	name = "\improper WY-LWI StarGlider SG-200"
-	},
-/area/lv759/indoors/spaceport/starglider)
 "uGH" = (
 /obj/effect/decal/cleanable/generic{
 	color = "#5d524b";
@@ -138100,9 +137843,7 @@
 /turf/open/auto_turf/hybrisa_auto_turf/layer2,
 /area/lv759/indoors/caves/north_caves/east)
 "uIY" = (
-/obj/structure/prop/hybrisa/airport/dropshipnosecone{
-	dir = 4
-	},
+/obj/structure/shuttle/part/dropship_wy/transparent/nose_center,
 /turf/open/floor/prison/ramptop/north,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "uJa" = (
@@ -139469,7 +139210,7 @@
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/lv759/outdoors/landing_zone_1)
 "uSL" = (
-/obj/structure/machinery/landinglight/ds2/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 8
 	},
 /obj/effect/decal/medical_decals{
@@ -140758,7 +140499,7 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/hospital/break_room)
 "vdt" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "68"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -141164,7 +140905,9 @@
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/lv759/indoors/hospital/icu)
 "vhj" = (
-/obj/structure/prop/hybrisa/airport/dropshipwingleft,
+/obj/structure/shuttle/part/dropship_wy/transparent/upper_left_wing{
+	icon_state = "zwing1"
+	},
 /turf/open/floor/hybrisa/metal/yellow_warning_floor,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "vhk" = (
@@ -144411,9 +144154,6 @@
 /area/lv759/bunker/checkpoint)
 "vIy" = (
 /obj/structure/dropship_equipment/fuel/fuel_enhancer,
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
 /obj/structure/pipes/standard/simple/hidden/dark,
 /turf/open/floor/plating/kutjevo,
 /area/lv759/indoors/wy_research_complex/hangarbay)
@@ -144435,7 +144175,7 @@
 /turf/open/hybrisa/street/sidewalk/south,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "vIR" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner{
 	icon_state = "92"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -144645,7 +144385,6 @@
 	pixel_x = 1;
 	pixel_y = 8
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/structure/prop/hybrisa/fakeplatforms/platform5/deco{
 	dir = 4
 	},
@@ -145118,7 +144857,7 @@
 /turf/open/floor/strata/multi_tiles,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "vNK" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "31"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -145829,7 +145568,6 @@
 /area/lv759/indoors/wy_research_complex/cargo)
 "vTt" = (
 /obj/item/clothing/accessory/storage/droppouch,
-/obj/item/prop/helmetgarb/netting,
 /obj/structure/machinery/light{
 	dir = 8
 	},
@@ -146221,9 +145959,6 @@
 /turf/open/floor/prison/ramptop,
 /area/lv759/outdoors/colony_streets/central_streets)
 "vWB" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
 /obj/structure/machinery/fuelcell_recycler,
 /turf/open/floor/plating,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_fuel)
@@ -146374,7 +146109,6 @@
 /area/lv759/indoors/caves/west_caves)
 "vXN" = (
 /obj/structure/closet/crate/medical,
-/obj/item/pamphlet/skill/medical,
 /obj/item/bodybag,
 /obj/item/bodybag,
 /obj/item/bodybag,
@@ -146659,7 +146393,6 @@
 /area/lv759/indoors/landing_zone_2/kmcc_hub_lounge_hallway)
 "vZQ" = (
 /obj/effect/decal/hybrisa/dirt,
-/mob/living/simple_animal/mouse/rat/brown,
 /turf/open/floor/hybrisa/metal/grated/north,
 /area/lv759/outdoors/colony_streets/north_west_street)
 "vZV" = (
@@ -147087,9 +146820,6 @@
 /area/lv759/indoors/caves/wy_research_complex_entrance)
 "wdt" = (
 /obj/effect/decal/hybrisa/dirt,
-/obj/structure/machinery/power/terminal{
-	dir = 1
-	},
 /obj/structure/prop/invuln/overhead_pipe{
 	color = "#a6aeab";
 	dir = 1
@@ -147686,9 +147416,8 @@
 /turf/open/floor/strata/multi_tiles/west,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "whs" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "46"
-	},
+/obj/structure/shuttle/part/dropship_wy/lower_left_wall,
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "whD" = (
 /obj/structure/closet,
@@ -148678,10 +148407,10 @@
 /turf/open/floor/prison/darkredfull2,
 /area/lv759/outdoors/landing_zone_1)
 "wpz" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
-/obj/structure/machinery/landinglight/ds2/spoke{
+/obj/structure/machinery/landinglight/spoke{
 	pixel_x = -12
 	},
 /obj/effect/decal/hybrisa/dirt,
@@ -149394,8 +149123,8 @@
 /turf/open/hybrisa/street/sidewalk/northwest,
 /area/lv759/outdoors/colony_streets/south_east_street)
 "wvJ" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo,
-/obj/structure/machinery/landinglight/ds2/spoke{
+/obj/structure/machinery/landinglight/delaytwo,
+/obj/structure/machinery/landinglight/spoke{
 	pixel_y = 12;
 	pixel_x = 6
 	},
@@ -149895,7 +149624,7 @@
 /turf/open/gm/river,
 /area/lv759/oob)
 "wAO" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "73"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -150190,11 +149919,8 @@
 /turf/open/hybrisa/street/cement1,
 /area/lv759/outdoors/colony_streets/north_east_street_LZ)
 "wDk" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "103";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
+	icon_state = "103"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
 "wDl" = (
@@ -150267,7 +149993,6 @@
 	icon_state = "trash_10";
 	pixel_y = 12
 	},
-/mob/living/simple_animal/mouse/rat/gray,
 /obj/structure/prop/hybrisa/misc/buildinggreebliessmall/smallvent3{
 	pixel_y = 28
 	},
@@ -150322,7 +150047,7 @@
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/lv759/indoors/electical_systems/substation1)
 "wEg" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "82"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -150419,10 +150144,10 @@
 /turf/open/floor/prison/cell_stripe,
 /area/lv759/indoors/wy_security/checkpoint_east)
 "wEG" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
-	icon_state = "zwing3";
-	opacity = 0
+/obj/structure/shuttle/part/dropship_wy/transparent/lower_left_wing{
+	icon_state = "zwing3"
 	},
+/turf/open/floor/plating,
 /area/lv759/indoors/spaceport/starglider)
 "wEI" = (
 /obj/structure/machinery/colony_floodlight/street{
@@ -152217,7 +151942,7 @@
 /turf/open/hybrisa/street/sidewalk/northeast,
 /area/lv759/outdoors/landing_zone_2)
 "wUS" = (
-/obj/structure/prop/hybrisa/airport/dropshipnosecone,
+/obj/structure/shuttle/part/dropship_wy/transparent/nose_top_left,
 /turf/open/floor/prison/ramptop/north,
 /area/lv759/indoors/spaceport/docking_bay_1)
 "wUY" = (
@@ -153421,7 +153146,9 @@
 /turf/open/floor/plating,
 /area/lv759/indoors/landing_zone_2/kmcc_hub_maintenance)
 "xeF" = (
-/obj/structure/closet/secure_closet/atmos_personal,
+/obj/structure/closet/secure_closet/atmos_personal{
+	req_one_access = list(9916)
+	},
 /turf/open/floor/corsat/squares,
 /area/lv759/indoors/power_plant/gas_generators)
 "xeK" = (
@@ -153780,7 +153507,6 @@
 	name = "Pipe";
 	color = "#a6aeab"
 	},
-/obj/structure/machinery/power/terminal,
 /obj/structure/prop/hybrisa/misc/buildinggreebliessmall/smallvent2{
 	pixel_y = 25
 	},
@@ -154806,10 +154532,6 @@
 /obj/structure/platform/metal/hybrisa/metalplatform4/west,
 /turf/open/hybrisa/street/cement3,
 /area/lv759/outdoors/colony_streets/central_streets)
-"xpP" = (
-/mob/living/simple_animal/mouse/rat/gray,
-/turf/open/hybrisa/street/sidewalkfull,
-/area/lv759/outdoors/colony_streets/south_east_street)
 "xpR" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 8;
@@ -155261,7 +154983,6 @@
 	icon_state = "S"
 	},
 /obj/structure/machinery/light/blue,
-/mob/living/simple_animal/mouse/rat/white,
 /obj/effect/decal/strata_decals/grime/grime3{
 	icon_state = "grime1"
 	},
@@ -156244,7 +155965,7 @@
 /area/lv759/indoors/caves/south_caves)
 "xzD" = (
 /obj/effect/decal/cleanable/liquid_fuel,
-/obj/structure/machinery/landinglight/ds1/delaytwo,
+/obj/structure/machinery/landinglight/delaytwo,
 /turf/open/hybrisa/street/sidewalk/south,
 /area/lv759/outdoors/landing_zone_2)
 "xzL" = (
@@ -156380,11 +156101,8 @@
 /turf/open/floor/hybrisa/carpet/rug_colorable/blue/west,
 /area/lv759/indoors/apartment/westbedrooms)
 "xAy" = (
-/turf/closed/shuttle/dropship2/transparent{
-	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport.";
-	icon = 'icons/turf/dropship4.dmi';
-	icon_state = "89";
-	name = "\improper WY-LWI Horizon Runner HR-150"
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
+	icon_state = "89"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
 "xAz" = (
@@ -157231,7 +156949,7 @@
 /turf/open/hybrisa/dropship/dropship4,
 /area/lv759/indoors/spaceport/starglider)
 "xGY" = (
-/turf/closed/shuttle/dropship4/WY/HorizonRunner{
+/turf/closed/shuttle/dropship_wy/HorizonRunner/transparent{
 	icon_state = "leftengine_3"
 	},
 /area/lv759/indoors/spaceport/horizon_runner)
@@ -157469,7 +157187,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
-/turf/open/floor/almayer/research/containment/corner_var1/containment_corner_variant_2,
+/turf/open/floor/almayer/research/containment/corner,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "xJn" = (
 /obj/item/paper/crumpled{
@@ -157540,7 +157258,7 @@
 /turf/open/floor/hybrisa/carpet/carpetbeige,
 /area/lv759/indoors/meridian/meridian_office)
 "xJY" = (
-/turf/closed/shuttle/dropship4/WY/StarGlider{
+/turf/closed/shuttle/dropship_wy/StarGlider{
 	icon_state = "64"
 	},
 /area/lv759/indoors/spaceport/starglider)
@@ -160231,7 +159949,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/turf/open/floor/almayer/research/containment/floor2/north,
+/turf/open/floor/almayer/research/containment/floor2,
 /area/lv759/indoors/wy_research_complex/xenobiology)
 "yfU" = (
 /obj/structure/roof/hybrisa/lattice_prop/lattice_6{
@@ -160696,7 +160414,10 @@
 	pixel_x = -9;
 	pixel_y = 20
 	},
-/obj/structure/prop/hybrisa/airport/dropshipnosecone,
+/obj/structure/shuttle/part/dropship_wy/transparent/nose_top_left{
+	name = "\improper WY-LWI Horizon Runner HR-150";
+	desc = "The WY-LWI Horizon Runner HR-150, a collaborative creation of Lunnar-Welsun Industries and Weyland-Yutani. This small dropship is designed for short-range commercial transport."
+	},
 /turf/open/floor/prison/ramptop/north,
 /area/lv759/indoors/spaceport/docking_bay_2)
 "yjN" = (
@@ -205055,7 +204776,7 @@ unn
 unn
 hcI
 rpO
-rgl
+bgK
 xDM
 eEL
 kRg
@@ -206321,7 +206042,7 @@ bgK
 sTm
 ahg
 xvX
-aLb
+eUE
 ozY
 dVy
 mgU
@@ -207323,7 +207044,7 @@ unn
 unn
 hcI
 bSF
-mzu
+eUE
 nHv
 tKf
 hcI
@@ -219222,7 +218943,7 @@ vSb
 vSb
 vSb
 vSb
-lxp
+vSb
 vSb
 vSb
 vSb
@@ -219934,7 +219655,7 @@ phW
 tNG
 tAV
 eRB
-iod
+cHd
 kMp
 jkL
 iJi
@@ -221564,11 +221285,11 @@ dCM
 luF
 jTR
 jTR
-nHU
+jTR
 pit
 fbs
 mLd
-eGr
+dNo
 aNI
 mpY
 neM
@@ -221742,7 +221463,7 @@ pdY
 aAm
 ugc
 epp
-hWZ
+byY
 byY
 sTG
 aAm
@@ -222498,7 +222219,7 @@ xXh
 xXh
 dii
 vSb
-lxp
+vSb
 vSb
 atZ
 xXh
@@ -223076,7 +222797,7 @@ oXC
 rxQ
 jTR
 jTR
-qoO
+jTR
 pYG
 vNK
 bjm
@@ -223088,7 +222809,7 @@ qMQ
 xJY
 mhh
 pDy
-uGF
+kvx
 vNK
 bjm
 hYZ
@@ -223582,8 +223303,8 @@ vpc
 jTR
 fAr
 rui
-sDH
-bka
+qoO
+gid
 eVc
 bSI
 iae
@@ -225018,7 +224739,7 @@ byY
 byY
 byY
 byY
-hWZ
+byY
 byY
 byY
 byY
@@ -226501,7 +226222,7 @@ nRN
 xtb
 ryW
 gcy
-jZG
+alN
 tox
 mZJ
 oGM
@@ -226756,7 +226477,7 @@ nPU
 alM
 xLK
 xOq
-nri
+qoy
 qXl
 pIg
 tmw
@@ -228250,7 +227971,7 @@ nRN
 nRN
 xJj
 xpb
-xpb
+mzu
 xpb
 jRH
 nRN
@@ -229526,14 +229247,14 @@ mcQ
 uVV
 dYS
 dYS
-fxJ
+nkJ
 rNw
 alL
-fxJ
-nIl
+nkJ
+dYS
 dBi
 nkJ
-nIl
+dYS
 vVa
 hsY
 sik
@@ -230380,7 +230101,7 @@ sgt
 wuG
 vZQ
 uud
-cVo
+vZQ
 fvN
 oeW
 oSg
@@ -251535,7 +251256,7 @@ unn
 unn
 wel
 pff
-aYO
+jrh
 hmn
 plo
 vzN
@@ -251787,7 +251508,7 @@ wel
 wel
 wel
 dRm
-aYO
+jrh
 apj
 plo
 xyk
@@ -256146,10 +255867,10 @@ oFA
 kHE
 pDM
 atP
-kSe
-kSe
-kSe
-kSe
+mZl
+mZl
+mZl
+mZl
 xgh
 akp
 amX
@@ -262763,7 +262484,7 @@ vGC
 vGC
 mfQ
 ozS
-xpP
+xih
 vxB
 mfQ
 dLw
@@ -269178,7 +268899,7 @@ ilr
 eAZ
 aex
 aex
-nck
+aex
 kdb
 kdb
 aex
@@ -269186,7 +268907,7 @@ aex
 oxI
 gBm
 iuz
-nck
+aex
 arh
 aex
 aex
@@ -269194,11 +268915,11 @@ aex
 aex
 vDz
 aex
-nck
 aex
 aex
 aex
-pQa
+aex
+aex
 xQC
 qqI
 aFs
@@ -270938,7 +270659,7 @@ wyp
 fww
 eID
 aex
-jiL
+owx
 ufs
 msR
 msR
@@ -271361,7 +271082,7 @@ hyG
 rzk
 itM
 aMI
-cHd
+rYn
 kDh
 kMo
 lAz
@@ -271613,7 +271334,7 @@ hyG
 kwy
 uqL
 gZg
-cHd
+rYn
 kDh
 kMo
 hcI
@@ -272702,11 +272423,11 @@ wyp
 fww
 eID
 aex
-etH
+mCO
 owx
 owx
 owx
-gid
+owx
 mrQ
 mrQ
 owx
@@ -272714,7 +272435,7 @@ owx
 mCO
 owx
 owx
-gid
+owx
 owx
 owx
 owx
@@ -272722,11 +272443,11 @@ owx
 owx
 wpw
 owx
-gid
 owx
 owx
 owx
-cBc
+owx
+aex
 bSk
 qJa
 non
@@ -273165,7 +272886,7 @@ mFZ
 mFZ
 aMW
 uWG
-tiI
+oSe
 aBI
 aMW
 hcI
