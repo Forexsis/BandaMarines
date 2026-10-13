@@ -306,6 +306,8 @@ GLOBAL_LIST_EMPTY(all_static_telecomms_towers)
 				if(FACTION_MARSHAL)
 					freq_listening |= CMB_FREQ
 				if(FACTION_YAUTJA, FACTION_YAUTJA_YOUNG, FACTION_YAUTJA_BADBLOOD, FACTION_YAUTJA_STRANDED)
+				if(FACTION_NSPA)
+					freq_listening |= NSPA_FREQ
 					to_chat(user, SPAN_WARNING("You decide to leave the human machine alone."))
 					return
 				else

@@ -1443,7 +1443,7 @@
 /obj/item/device/radio/headset/distress/NSPA
 	name = "NSPA Headset"
 	desc = "A special headset used by the NSPA."
-	frequency = RMC_FREQ
+	frequency = NSPA_FREQ
 	icon_state = "vai_headset"
 	initial_keys = list(/obj/item/device/encryptionkey/almayer, /obj/item/device/encryptionkey/royal_marine)
 	has_hud = TRUE
